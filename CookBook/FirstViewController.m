@@ -17,6 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.RecipeLabel.text = self.recipes.Recipe;
+    
+    self.IngredientsLabel.text = self.recipes.ingredients;
+    
+    self.InstructionsLabel.text = self.recipes.instructions;
+     
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
