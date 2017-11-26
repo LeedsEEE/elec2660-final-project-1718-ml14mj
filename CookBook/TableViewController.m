@@ -33,7 +33,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section;{
     return [NSString stringWithFormat:@" %li Cuisine",section+1];
@@ -45,6 +45,10 @@
     if(section == 0){
         NumberOfRows = self.data.Italian.count;
     }
+    if(section == 1){
+        NumberOfRows = self.data.American.count;
+    }
+
     return NumberOfRows;
 }
 
@@ -60,6 +64,14 @@
         cell.textLabel.text = tempRecipes.Recipe;
         
 }
+    if (indexPath.section == 1){
+        
+        Recipes *tempRecipes = [self.data.American objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = tempRecipes.Recipe;
+        
+    }
+
     
 
     return cell;
@@ -115,6 +127,10 @@
         
         if (indexPath.section == 0){
             Recipes *tempRecipes = [self.data.Italian objectAtIndex:indexPath.row];
+            destinationViewController.recipes = tempRecipes;
+        }
+        if (indexPath.section == 1){
+            Recipes *tempRecipes = [self.data.American objectAtIndex:indexPath.row];
             destinationViewController.recipes = tempRecipes;
         }
 

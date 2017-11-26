@@ -11,6 +11,7 @@
 @interface DataRacipes : NSObject
 
 @property (strong , nonatomic)NSMutableArray *Italian;
+@property (strong , nonatomic)NSMutableArray *American;
 
 
 @end

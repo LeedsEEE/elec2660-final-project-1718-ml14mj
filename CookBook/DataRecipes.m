@@ -23,6 +23,16 @@
         
         
                 [self.Italian addObject:PestoPasta];
+        self.American = [NSMutableArray array];
+        Recipes *Burger = [[Recipes alloc] init];
+        Burger.Recipe = @"Burger";
+        Burger.ingredients = @"Money";
+        Burger.instructions = @"go to Five guys";
+        
+        
+        [self.American addObject:Burger];
+        
+
 
     }
     return self;
