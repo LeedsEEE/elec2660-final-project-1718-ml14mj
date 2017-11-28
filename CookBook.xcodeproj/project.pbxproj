@@ -10,6 +10,10 @@
 		11CA162B1FC991D000EAB0D5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CA162A1FC991D000EAB0D5 /* TableViewController.m */; };
 		11CA162E1FC9949F00EAB0D5 /* Recipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CA162D1FC9949F00EAB0D5 /* Recipes.m */; };
 		11CA16311FC9973100EAB0D5 /* DataRecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CA16301FC9973100EAB0D5 /* DataRecipes.m */; };
+		11CA16941FCDBC0100EAB0D5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CA16931FCDBC0100EAB0D5 /* MapViewController.m */; };
+		11CA16971FCDBC2300EAB0D5 /* Mappins.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CA16961FCDBC2300EAB0D5 /* Mappins.m */; };
+		11CA169A1FCDBCA000EAB0D5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CA16991FCDBCA000EAB0D5 /* MapKit.framework */; };
+		11CA169C1FCDBCA600EAB0D5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CA169B1FCDBCA600EAB0D5 /* CoreLocation.framework */; };
 		11DBCD6A1FC5E1C20009BB68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DBCD691FC5E1C20009BB68 /* main.m */; };
 		11DBCD6D1FC5E1C20009BB68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DBCD6C1FC5E1C20009BB68 /* AppDelegate.m */; };
 		11DBCD701FC5E1C20009BB68 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DBCD6F1FC5E1C20009BB68 /* FirstViewController.m */; };
@@ -45,6 +49,12 @@
 		11CA162D1FC9949F00EAB0D5 /* Recipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipes.m; sourceTree = "<group>"; };
 		11CA162F1FC9973100EAB0D5 /* DataRecipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRecipes.h; sourceTree = "<group>"; };
 		11CA16301FC9973100EAB0D5 /* DataRecipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRecipes.m; sourceTree = "<group>"; };
+		11CA16921FCDBC0100EAB0D5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		11CA16931FCDBC0100EAB0D5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		11CA16951FCDBC2300EAB0D5 /* Mappins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappins.h; sourceTree = "<group>"; };
+		11CA16961FCDBC2300EAB0D5 /* Mappins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mappins.m; sourceTree = "<group>"; };
+		11CA16991FCDBCA000EAB0D5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		11CA169B1FCDBCA600EAB0D5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		11DBCD651FC5E1C20009BB68 /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DBCD691FC5E1C20009BB68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11DBCD6B1FC5E1C20009BB68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CA169C1FCDBCA600EAB0D5 /* CoreLocation.framework in Frameworks */,
+				11CA169A1FCDBCA000EAB0D5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11CA16981FCDBC9F00EAB0D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11CA169B1FCDBCA600EAB0D5 /* CoreLocation.framework */,
+				11CA16991FCDBCA000EAB0D5 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		11DBCD5C1FC5E1C20009BB68 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +118,7 @@
 				11DBCD841FC5E1C30009BB68 /* CookBookTests */,
 				11DBCD8F1FC5E1C30009BB68 /* CookBookUITests */,
 				11DBCD661FC5E1C20009BB68 /* Products */,
+				11CA16981FCDBC9F00EAB0D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +145,13 @@
 				11CA162D1FC9949F00EAB0D5 /* Recipes.m */,
 				11CA162F1FC9973100EAB0D5 /* DataRecipes.h */,
 				11CA16301FC9973100EAB0D5 /* DataRecipes.m */,
-				11DBCD741FC5E1C20009BB68 /* Main.storyboard */,
 				11DBCD711FC5E1C20009BB68 /* SecondViewController.h */,
 				11DBCD721FC5E1C20009BB68 /* SecondViewController.m */,
+				11DBCD741FC5E1C20009BB68 /* Main.storyboard */,
+				11CA16921FCDBC0100EAB0D5 /* MapViewController.h */,
+				11CA16931FCDBC0100EAB0D5 /* MapViewController.m */,
+				11CA16951FCDBC2300EAB0D5 /* Mappins.h */,
+				11CA16961FCDBC2300EAB0D5 /* Mappins.m */,
 				11DBCD771FC5E1C20009BB68 /* Assets.xcassets */,
 				11DBCD791FC5E1C20009BB68 /* LaunchScreen.storyboard */,
 				11DBCD7C1FC5E1C30009BB68 /* Info.plist */,
@@ -296,9 +322,11 @@
 				11DBCD731FC5E1C20009BB68 /* SecondViewController.m in Sources */,
 				11DBCD6D1FC5E1C20009BB68 /* AppDelegate.m in Sources */,
 				11DBCD701FC5E1C20009BB68 /* FirstViewController.m in Sources */,
+				11CA16941FCDBC0100EAB0D5 /* MapViewController.m in Sources */,
 				11CA162B1FC991D000EAB0D5 /* TableViewController.m in Sources */,
 				11DBCD6A1FC5E1C20009BB68 /* main.m in Sources */,
 				11CA16311FC9973100EAB0D5 /* DataRecipes.m in Sources */,
+				11CA16971FCDBC2300EAB0D5 /* Mappins.m in Sources */,
 				11CA162E1FC9949F00EAB0D5 /* Recipes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

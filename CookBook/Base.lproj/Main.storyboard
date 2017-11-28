@@ -159,11 +159,61 @@
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="flf-4Y-tQu" kind="relationship" relationship="viewControllers" id="Osp-dw-wVb"/>
+                        <segue destination="GB2-xI-Qhl" kind="relationship" relationship="viewControllers" id="IV3-yS-qzm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="FeX-dh-xTq">
+            <objects>
+                <viewController id="GB2-xI-Qhl" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XZf-cn-iqj"/>
+                        <viewControllerLayoutGuide type="bottom" id="r1h-Sa-3EG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JSC-Ky-hWF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="B7u-j8-Klr">
+                                <frame key="frameInset" minX="16" minY="72" width="343" height="466"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJx-EL-8U5">
+                                <frame key="frameInset" minY="559" width="150" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tesco"/>
+                                <connections>
+                                    <action selector="Tesco:" destination="GB2-xI-Qhl" eventType="touchUpInside" id="eyJ-kx-X8Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34C-qA-8MT">
+                                <frame key="frameInset" minX="205" minY="573" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Morrisons"/>
+                                <connections>
+                                    <action selector="Morrisons:" destination="GB2-xI-Qhl" eventType="touchUpInside" id="4UF-Ap-Zvo"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ip1-pF-w5t">
+                                <frame key="frameInset" minX="16" minY="64" width="343" height="466"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="second" id="Q8r-9e-Wp4"/>
+                    <navigationItem key="navigationItem" id="izk-nA-sxN"/>
+                    <connections>
+                        <outlet property="mapview" destination="ip1-pF-w5t" id="bnN-me-tgb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHJ-vY-VVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="949"/>
         </scene>
     </scenes>
     <resources>
