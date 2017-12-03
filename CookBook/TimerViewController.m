@@ -47,6 +47,17 @@
     countDownInterval = (NSTimeInterval)_Timer.countDownDuration;
     remainder = countDownInterval;
     afterRemainder = countDownInterval - remainder%60;
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateCountdown) userInfo:nil repeats:YES];
+   timerstop = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateCountdown) userInfo:nil repeats:YES];
+}
+
+- (IBAction)StopButton:(id)sender {
+     [timerstop   invalidate];
+}
+
+- (IBAction)RestartButton:(id)sender {
+    _TimerLabel.text = [NSString stringWithFormat:@"Timer"];
+    
+    [timerstop  invalidate];
+
 }
 @end

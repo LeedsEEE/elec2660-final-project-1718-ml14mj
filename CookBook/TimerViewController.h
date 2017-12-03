@@ -13,10 +13,13 @@
     int afterRemainder;
     int remainder;
     NSTimeInterval countDownInterval;
+    NSTimer *timerstop ;
     
 }
 @property (weak, nonatomic) IBOutlet UILabel *TimerLabel;
 @property (weak, nonatomic) IBOutlet UIDatePicker *Timer;
 - (IBAction)StartButton:(id)sender;
+- (IBAction)StopButton:(id)sender;
+- (IBAction)RestartButton:(id)sender;
 
 @end
