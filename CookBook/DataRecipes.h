@@ -12,6 +12,12 @@
 
 @property (strong , nonatomic)NSMutableArray *Italian;
 @property (strong , nonatomic)NSMutableArray *American;
+@property (strong , nonatomic)NSMutableArray *Indian;
+@property (strong , nonatomic)NSMutableArray *Dessert;
+@property (strong , nonatomic)NSMutableArray *Arabian;
+
+
+
 
 
 @end

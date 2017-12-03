@@ -23,6 +23,7 @@
         
         
                 [self.Italian addObject:PestoPasta];
+        
         self.American = [NSMutableArray array];
         Recipes *Burger = [[Recipes alloc] init];
         Burger.Recipe = @"Burger";
@@ -31,6 +32,33 @@
         
         
         [self.American addObject:Burger];
+        
+        self.Indian = [NSMutableArray array];
+        Recipes *ButterChicken = [[Recipes alloc] init];
+        ButterChicken.Recipe = @"ButterChicken";
+        ButterChicken.ingredients = @"Money";
+        ButterChicken.instructions = @"go to Akbar";
+        
+        
+        [self.Indian addObject:ButterChicken];
+        
+        self.Dessert = [NSMutableArray array];
+        Recipes *Chocolate = [[Recipes alloc] init];
+        Chocolate.Recipe = @"Chocolate";
+        Chocolate.ingredients = @"Money";
+        Chocolate.instructions = @"go to Kaspas";
+        
+        
+        [self.Dessert addObject:Chocolate];
+        
+        self.Arabian = [NSMutableArray array];
+        Recipes *Machboos = [[Recipes alloc] init];
+        Machboos.Recipe = @"Machboos";
+        Machboos.ingredients = @"a good mom ";
+        Machboos.instructions = @"go to her";
+        
+        
+        [self.Arabian addObject:Machboos];
         
 
 

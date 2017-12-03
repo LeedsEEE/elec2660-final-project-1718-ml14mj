@@ -33,11 +33,19 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 5;
 }
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section;{
-    return [NSString stringWithFormat:@" %li Cuisine",section+1];
+
+/*- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section;{
+    return [NSString stringWithFormat:@"Italian Cuisine",section+1];
+  
+
     //sections for the header 
+}*/
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Italian Cuisine",@"American Cuisine",@"Indian Cuisine",@"Dessert Cuisine",@"Arabian Cuisine",nil];
+    return [array objectAtIndex:section];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -47,6 +55,15 @@
     }
     if(section == 1){
         NumberOfRows = self.data.American.count;
+    }
+    if(section == 2){
+        NumberOfRows = self.data.Indian.count;
+    }
+    if(section == 3){
+        NumberOfRows = self.data.Dessert.count;
+    }
+    if(section == 4){
+        NumberOfRows = self.data.Arabian.count;
     }
 
     return NumberOfRows;
@@ -71,6 +88,30 @@
         cell.textLabel.text = tempRecipes.Recipe;
         
     }
+    if (indexPath.section == 2){
+        
+        Recipes *tempRecipes = [self.data.Indian objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = tempRecipes.Recipe;
+        
+    }
+    if (indexPath.section == 3){
+        
+        Recipes *tempRecipes = [self.data.Dessert objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = tempRecipes.Recipe;
+        
+    }
+    if (indexPath.section == 4){
+        
+        Recipes *tempRecipes = [self.data.Arabian objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = tempRecipes.Recipe;
+        
+    }
+
+
+
 
     
 
@@ -133,6 +174,21 @@
             Recipes *tempRecipes = [self.data.American objectAtIndex:indexPath.row];
             destinationViewController.recipes = tempRecipes;
         }
+        if (indexPath.section == 2){
+            Recipes *tempRecipes = [self.data.Indian objectAtIndex:indexPath.row];
+            destinationViewController.recipes = tempRecipes;
+        }
+        if (indexPath.section == 3){
+            Recipes *tempRecipes = [self.data.Dessert objectAtIndex:indexPath.row];
+            destinationViewController.recipes = tempRecipes;
+        }
+        if (indexPath.section == 4){
+            Recipes *tempRecipes = [self.data.Arabian objectAtIndex:indexPath.row];
+            destinationViewController.recipes = tempRecipes;
+        }
+
+
+
 
 
 
