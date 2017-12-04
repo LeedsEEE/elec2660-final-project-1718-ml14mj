@@ -15,7 +15,7 @@
 @property (strong , nonatomic)NSMutableArray *Indian;
 @property (strong , nonatomic)NSMutableArray *Dessert;
 @property (strong , nonatomic)NSMutableArray *Arabian;
-
+@property (strong , nonatomic)NSMutableArray *Chinese;
 
 
 

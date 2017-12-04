@@ -130,6 +130,13 @@
         PineappleCake.Recipe = @"Pineapple Cake";
         PineappleCake.ingredients = @"3/4 Cup sugar, 1/2 cup plant oil, 3 Eggs, 1 can milk cream, 1/2 Cup plant oil, 1 Cup flour, 3 Eggs, 1 spoon baking powder, 1/2 cp brown sugar, 1 teaspoon vanilla, 1 Can pineapple";
         PineappleCake.instructions = @"1. Put sugar and oil in the mixer and leave them mix well. 2. Turn the oven on 180 degree Celsius,Add pineapples pieces,eggs,sugar,oil and vanilla in the mixer and mix well. Then add milk cream, then flour and baking powder and leave them mixing well at slow speed. Then add 1/2 cup of pineapple and enter them into the oven for 45 minutes.";
+
+        Recipes *ChocolateChipCookies = [[Recipes alloc] init];
+        ChocolateChipCookies.Recipe = @"Chocolate Chip Cookies";
+        ChocolateChipCookies.ingredients = @"1/2 cup of sugar,3/4 cup of brown suger, 1 teaspoon of salt, 1/2 cup of melted butter, 1 egg, 1 teaspoon of vanilla, 1 and 1/4 cups of flour, 1/2 teaspoon of baking soda, 1 cup of chocolae chip";
+        ChocolateChipCookies.instructions = @"1.add in the sugers and the butter and the salt and mix well. 2. after mixing add in the egg and vanila then mix well. 3. after mixing add in the flour, baking soda and the chocolate chips then let it chill for 5 minutes. 4. using an icecream scooper scoop the mix and put it in the tray an bake them for 15 minutes on 180C after that let them cool and enjoy ";
+        
+
         
 
 
@@ -139,6 +146,8 @@
         [self.Dessert addObject:ApplePie];
         [self.Dessert addObject:Tiramisu];
         [self.Dessert addObject:PineappleCake];
+        [self.Dessert addObject:ChocolateChipCookies];
+
 //Arabian section
         
         self.Arabian = [NSMutableArray array];
@@ -150,6 +159,30 @@
         
         [self.Arabian addObject:Machboos];
         
+        self.Chinese = [NSMutableArray array];
+        Recipes *FriedRice = [[Recipes alloc] init];
+        FriedRice.Recipe = @"Fried Rice";
+        FriedRice.ingredients = @"1 cup of rice, 500g of chicken, oil, 1 cup teriyaki sauce, ½ cup chopped onion, ½ cup chopped carrots, 3 beaten eggs, 2 tablespoons soy sauce ";
+        FriedRice.instructions = @"1. Marinate the chicken in teriyaki sauce in the refrigerator for at least an hour. 2. In a wok or deep skillet, add the chicken in the teriyaki marinade and cook thoroughly over high heat. Set aside. 3. In the same pan, add the oil and cook onions, garlic, and carrots until onions are translucent. 4. Add broccoli and cook an additional 3-4 minutes. Push all of the cooked vegetables to the side of the pan. 5. Beat the eggs and pour into the cleared half of the pan. Scramble the eggs and mix with the rest of the vegetables. 6. Add rice, soy sauce, pepper, and cooked chicken. Mix well and let the rice cook until slightly crispy. 7. Enjoy!";
+        
+        Recipes *ChickenChowMein = [[Recipes alloc] init];
+        ChickenChowMein.Recipe = @"Chicken Chow Mein";
+        ChickenChowMein.ingredients = @"⅓ cup soy sauce, 1 tablespoon ginger, minced, 1 tablespoon garlic, minced, 1 tablespoon oyster sauce, 1 tablespoon sesame oil, 1 tablespoon sugar, ¼ teaspoon red pepper flakes, Pepper, to taste, 2 boneless, skinless chicken breasts, cubed, ½ onion, thinly sliced into half moons, 3 stalks celery, sliced, 4 carrots, julienned, 3 cups cabbage, shredded, 2 packages ramen noodles, 1½ cups chicken broth";
+        ChickenChowMein.instructions = @"1.In a bowl, add the soy sauce, ginger, garlic, oyster sauce, sesame oil, sugar, red pepper flakes, and pepper. 2. place the chicken in a bag and marinade it for 1 hour.3. Add the marinated chicken to a large pot and cook over medium-high heat.4. Remove the chicken from the pot. 5. Add the sesame oil to the bottom of the pot and add the onion, celery, carrots, and cabbage.6. Place both of the ramen noodle bricks into the bottom of the pot. 7. Pour in chicken broth over the noodles and Cover the noodles with the vegetables and simmer for 5 minutes. 9. Break up the noodles and add the chickenand the rest of the marinade.";
+        Recipes *SweetAndSourChicken = [[Recipes alloc] init];
+        SweetAndSourChicken.Recipe = @"Sweet And Sour Chicken";
+        SweetAndSourChicken.ingredients = @"500g of cubed chicken,Salt and Pepper, ½ cup cornstarch, 2 eggs, beaten, Oil, to fry, Sauce, 1 tablespoon oil, 2 teaspoons garlic, minced, 1 bell pepper, diced, ¾ cup cider vinegar, 1 tablespoon soy sauce, ¼ cup ketchup, ½ cup sugar, hopped scallions, to serve, Sesame seeds, to serve, Rice, cooked, to serve";
+        SweetAndSourChicken.instructions = @"1. Season chicken with salt and pepper.2. Separate the cornstarch and eggs into two bowls. Dip the chicken into the cornstarch, then eggs.3. Heat a skillet over high heat and add oil. Fry the chicken until golden, crispy and cooked through. Transfer to a paper towel-lined plate.4. In a large pan, heat oil and fry garlic until fragrant.5. Add the bell pepper, apple cider vinegar, soy sauce, ketchup, and sugar. Bring to a boil.6. When the sauce has thickened, add the fried chicken. Toss to coat.7. Top with chopped scallions and sesame seeds. Serve with rice.8. Enjoy!";
+        
+
+        
+        
+        [self.Chinese addObject:FriedRice];
+        [self.Chinese addObject:ChickenChowMein];
+        [self.Chinese addObject:SweetAndSourChicken];
+
+        
+
 
 
     }

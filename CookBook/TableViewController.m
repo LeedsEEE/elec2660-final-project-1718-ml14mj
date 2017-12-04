@@ -33,7 +33,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 5;
+    return 6;
 }
 
 /*- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section;{
@@ -44,7 +44,7 @@
 }*/
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Italian Cuisine",@"American Cuisine",@"Indian Cuisine",@"Dessert Cuisine",@"Arabian Cuisine",nil];
+    NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Italian Cuisine",@"American Cuisine",@"Indian Cuisine",@"Dessert Cuisine",@"Arabian Cuisine",@"Chinese Cuisine",nil];
     return [array objectAtIndex:section];
 }
 
@@ -65,6 +65,10 @@
     if(section == 4){
         NumberOfRows = self.data.Arabian.count;
     }
+    if(section == 5){
+        NumberOfRows = self.data.Chinese.count;
+    }
+
 
     return NumberOfRows;
 }
@@ -105,6 +109,13 @@
     if (indexPath.section == 4){
         
         Recipes *tempRecipes = [self.data.Arabian objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = tempRecipes.Recipe;
+        
+    }
+    if (indexPath.section == 5){
+        
+        Recipes *tempRecipes = [self.data.Chinese objectAtIndex:indexPath.row];
         
         cell.textLabel.text = tempRecipes.Recipe;
         
@@ -186,6 +197,11 @@
             Recipes *tempRecipes = [self.data.Arabian objectAtIndex:indexPath.row];
             destinationViewController.recipes = tempRecipes;
         }
+        if (indexPath.section == 5){
+            Recipes *tempRecipes = [self.data.Chinese objectAtIndex:indexPath.row];
+            destinationViewController.recipes = tempRecipes;
+        }
+
 
 
 
