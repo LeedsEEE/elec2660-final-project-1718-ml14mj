@@ -60,4 +60,8 @@
     [timerstop  invalidate];
 
 }
+/* reference
+ http://aarlangdi.blogspot.co.uk/2014/04/timer-with-datepicker-in-xcode.html
+ 
+ */
 @end
