@@ -37,11 +37,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LSO-V4-ldk" id="Ihn-1i-gwD">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UBD-Vk-sab">
-                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <frame key="frameInset" minX="15" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -192,46 +192,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gu-T4-Pnl">
-                                <frame key="frameInset" minX="16" width="343" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gu-T4-Pnl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="CJU-5p-sw4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="54"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2z-Ze-i7Y">
-                                <frame key="frameInset" minX="60" minY="282" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2z-Ze-i7Y">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="YKg-Xa-Ok8"/>
+                                </constraints>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="StartButton:" destination="Hqs-mq-lMZ" eventType="touchUpInside" id="opJ-gF-oG7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRQ-wd-W5K">
-                                <frame key="frameInset" minX="239" minY="282" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Restart"/>
-                                <connections>
-                                    <action selector="RestartButton:" destination="Hqs-mq-lMZ" eventType="touchUpInside" id="Ejf-SY-PwE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-kZ-9Z8">
-                                <frame key="frameInset" minX="143" minY="282" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-kZ-9Z8">
                                 <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="StopButton:" destination="Hqs-mq-lMZ" eventType="touchUpInside" id="wIW-xt-8yX"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-np-Ip2">
-                                <frame key="frameInset" minX="17" minY="110" height="164"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-np-Ip2">
                                 <date key="date" timeIntervalSinceReferenceDate="533945380.49330699">
                                     <!--2017-12-02 22:09:40 +0000-->
                                 </date>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRQ-wd-W5K">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="lWc-76-5Uf"/>
+                                </constraints>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="RestartButton:" destination="Hqs-mq-lMZ" eventType="touchUpInside" id="Ejf-SY-PwE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="4Gu-T4-Pnl" secondAttribute="leading" id="171-9K-7vV"/>
+                            <constraint firstItem="4Gu-T4-Pnl" firstAttribute="trailing" secondItem="wCi-kd-Xht" secondAttribute="trailingMargin" id="6ks-la-dGS"/>
+                            <constraint firstItem="4Gu-T4-Pnl" firstAttribute="top" secondItem="wCi-kd-Xht" secondAttribute="top" id="Auv-oI-Bso"/>
+                            <constraint firstItem="TJq-np-Ip2" firstAttribute="top" secondItem="4Gu-T4-Pnl" secondAttribute="bottom" constant="-1" id="DGI-Dk-Jfi"/>
+                            <constraint firstItem="TJq-np-Ip2" firstAttribute="leading" secondItem="wCi-kd-Xht" secondAttribute="leadingMargin" constant="1" id="Mda-v4-Z4K"/>
+                            <constraint firstItem="xe4-kZ-9Z8" firstAttribute="leading" secondItem="u2z-Ze-i7Y" secondAttribute="trailing" constant="8" symbolic="YES" id="NfN-Sq-WU7"/>
+                            <constraint firstItem="eRQ-wd-W5K" firstAttribute="top" secondItem="TJq-np-Ip2" secondAttribute="bottom" constant="30" id="ZVG-nr-MU9"/>
+                            <constraint firstItem="u2z-Ze-i7Y" firstAttribute="leading" secondItem="wCi-kd-Xht" secondAttribute="leadingMargin" constant="45" id="fPn-Zf-cEP"/>
+                            <constraint firstItem="u2z-Ze-i7Y" firstAttribute="top" secondItem="TJq-np-Ip2" secondAttribute="bottom" constant="30" id="nyF-Ni-5LK"/>
+                            <constraint firstItem="xe4-kZ-9Z8" firstAttribute="top" secondItem="TJq-np-Ip2" secondAttribute="bottom" constant="30" id="wI3-e8-FKk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TJq-np-Ip2" secondAttribute="trailing" constant="22" id="xWp-oB-sG9"/>
+                            <constraint firstItem="eRQ-wd-W5K" firstAttribute="leading" secondItem="xe4-kZ-9Z8" secondAttribute="trailing" constant="25" id="zAw-aZ-vJb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eRQ-wd-W5K" secondAttribute="trailing" constant="40" id="zK9-8D-SuT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Timer" image="second" id="EW3-Gd-KvY"/>
                     <connections>
