@@ -50,7 +50,7 @@
     tesco.subtitle=@"supermarket";
     tesco.coordinate=region2.center;
     [_mapview addAnnotation:tesco];
-    
+    // this code shows the pins that i inserted in the map to so u can get an idea where the supermarket is. 
 
     // Do any additional setup after loading the view.
 }
@@ -81,4 +81,10 @@
     [[UIApplication sharedApplication]openURL:[NSURL URLWithString:string]];
     
 }
+
+/*
+ the links above are the locations of te pins i inserted in the map so when you press on the button it will take you in apple maps and shows you the diraction from ur current location to the supermarket you pick.
+ reference
+https://www.youtube.com/watch?v=A-_m-zIzc2M
+ */
 @end

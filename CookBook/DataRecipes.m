@@ -189,6 +189,8 @@
     return self;
 }
 
-/*all recipes are from myself or from the Tasty youtube channel (https://www.youtube.com/channel/UCJFp8uSYCjXOMnkUyb3CQ3Q/videos
+/*
+ it is possiable to add in as many number of recipes but i will use the one in the app to show my example of my table view.
+ all recipes are from myself or from the Tasty youtube channel (https://www.youtube.com/channel/UCJFp8uSYCjXOMnkUyb3CQ3Q/videos
 */
  @end

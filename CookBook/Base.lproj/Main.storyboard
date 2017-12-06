@@ -12,7 +12,7 @@
             <objects>
                 <navigationController id="flf-4Y-tQu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Recipe" image="first" id="6aD-KN-ch6"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="phe-qb-ZIc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="phe-qb-ZIc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -37,11 +37,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LSO-V4-ldk" id="Ihn-1i-gwD">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UBD-Vk-sab">
-                                            <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                            <frame key="frameInset" minX="15" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -140,7 +140,7 @@
             </objects>
             <point key="canvasLocation" x="1417.5999999999999" y="-747.52623688155927"/>
         </scene>
-        <!--Second-->
+        <!--Notes-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
@@ -174,7 +174,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="0sy-rg-1op" secondAttribute="leading" id="s5O-l2-lLz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
