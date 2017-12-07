@@ -83,6 +83,7 @@
 }
 
 /*
+ i added a scroll view so that it will be possiable for all screen sizes to look at the map and the two buttons.
  the links above are the locations of te pins i inserted in the map so when you press on the button it will take you in apple maps and shows you the diraction from ur current location to the supermarket you pick.
  reference
 https://www.youtube.com/watch?v=A-_m-zIzc2M

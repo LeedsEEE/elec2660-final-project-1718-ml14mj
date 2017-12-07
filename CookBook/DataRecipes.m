@@ -15,6 +15,8 @@
 {
     self = [super init];
     if (self) {
+        
+//Italian section
         self.Italian = [NSMutableArray array];
         Recipes *PestoPasta = [[Recipes alloc] init];
         PestoPasta.Recipe = @"Pesto Pasta";
@@ -46,7 +48,7 @@
 
 
         
-        //American section
+//American section
         
         self.American = [NSMutableArray array];
         Recipes *Burger = [[Recipes alloc] init];
@@ -83,7 +85,7 @@
         [self.American addObject:MushroomSoup];
 
 
-        
+//Indean section
         self.Indian = [NSMutableArray array];
         Recipes *ButterChicken = [[Recipes alloc] init];
         ButterChicken.Recipe = @"ButterChicken";
@@ -106,7 +108,7 @@
         [self.Indian addObject:BiryaniChicken];
         [self.Indian addObject:BiryaniLamb];
 
-        //Dessert section 
+//Dessert section 
         
         
         self.Dessert = [NSMutableArray array];
@@ -119,7 +121,7 @@
         Recipes *ApplePie = [[Recipes alloc] init];
         ApplePie.Recipe = @"Apple Pie";
         ApplePie.ingredients = @"5 light apples (25 Gm per each), 1 packet butter, 1 Cup flour,4 Green apples, 1 Block butter, 4 big spoons powder sugar, 1 small spoon cinnamon";
-        ApplePie.instructions = @"Knead the dough ingredients with your hand well, put it on nylon paper, and leave it to rest for 1/2 hour.2.Put sugar with cinnamon on fire, put butter block on fire, and then add the apples. Leave it until it dries water entirely, turn off fire, and leave it turn cold.3.Extend the dough, cut it into circle-shapes, fill it with the apple filling, close it well, and put it in an anointed plate with oil. Enter the plate into the oven for 20 minutes or until it turns red.";
+        ApplePie.instructions = @"1.Knead the dough ingredients with your hand well, put it on nylon paper, and leave it to rest for 1/2 hour.2.Put sugar with cinnamon on fire, put butter block on fire, and then add the apples. Leave it until it dries water entirely, turn off fire, and leave it turn cold.3.Extend the dough, cut it into circle-shapes, fill it with the apple filling, close it well, and put it in an anointed plate with oil. Enter the plate into the oven for 20 minutes or until it turns red.";
         
         Recipes *Tiramisu = [[Recipes alloc] init];
         Tiramisu.Recipe = @"Tiramisu";
@@ -151,14 +153,16 @@
 //Arabian section
         
         self.Arabian = [NSMutableArray array];
-        Recipes *Machboos = [[Recipes alloc] init];
-        Machboos.Recipe = @"Machboos";
-        Machboos.ingredients = @"a good mom ";
-        Machboos.instructions = @"go to her";
+        Recipes *BeefKebab = [[Recipes alloc] init];
+        BeefKebab.Recipe = @"Beef Kebab";
+        BeefKebab.ingredients = @"2 pound beef sirloin, cut into 1 inch cubes, 1 tablespoon. garlic, minced, 1/2 teaspoon ground coriander, 1 teaspoon cumin, 1/2 teaspoon paprika, 1 teaspoon distilled white vinegar, 1/2 cup olive oil, 3 bell peppers (red, yellow and green), cut into 1 inch pieces, 1 red onion, cut into 1 inch pieces";
+        BeefKebab.instructions = @"1. In a re-sealable freezer bag, add beef, garlic, coriander, cumin, paprika, white vinegar, and olive oil. Seal the bag and distribute seasonings. Allow to marinate in the refrigerator for 24 hours. 2. Preheat the grill on high. 3. To assemble the kebabs, spray skewers with non-stick cooking spray and alternate threading beef, onions and bell peppers onto the skewer. 4. Cook 5-7 minutes on each side. 5. Serve kebabs with garlic sauce, salad, rice, hummus, and pita bread. 6. Enjoy!";
         
         
-        [self.Arabian addObject:Machboos];
+        [self.Arabian addObject:BeefKebab];
         
+        
+//Chinese section
         self.Chinese = [NSMutableArray array];
         Recipes *FriedRice = [[Recipes alloc] init];
         FriedRice.Recipe = @"Fried Rice";
@@ -190,6 +194,7 @@
 }
 
 /*
+ i added a scroll view so that it will work on all screen sizes and on all iphones and ipads.
  it is possiable to add in as many number of recipes but i will use the one in the app to show my example of my table view.
  all recipes are from myself or from the Tasty youtube channel (https://www.youtube.com/channel/UCJFp8uSYCjXOMnkUyb3CQ3Q/videos
 */

@@ -30,7 +30,7 @@
     int secs = (int)(((int)afterRemainder - (60 * mins) - (60 * hours *60)));
     NSString *displayText = [[NSString alloc ]initWithFormat:@"%02u: %02u :%02u",hours,mins,secs];
     self.TimerLabel.text = displayText;
-    
+    // the above code is just equations to get the secods, minutes and hours and placing them in the TimerLabel 
 }
     
 
@@ -49,7 +49,7 @@
     remainder = countDownInterval;
     afterRemainder = countDownInterval - remainder%60;
    timerstop = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateCountdown) userInfo:nil repeats:YES];
-    //the comand above will start the countdown in a 1 second interval in reverse as the time chosen in the datepicker
+    //the comand above will start the countdown in a 1 second interval as the time chosen in the datepicker
 }
 
 - (IBAction)StopButton:(id)sender {
@@ -61,9 +61,12 @@
     _TimerLabel.text = [NSString stringWithFormat:@"Timer"];
     
     [timerstop  invalidate];
-// this code will stop the timer and restartit to its starting state
+// this code will stop the timer and restart to its starting state
 }
-/* reference
+
+/* 
+ the code works on every screen size but the buttons will not apper in the iphoneSE becouse the screen size is too small when in landscape mode but it will work in the potrait mode.
+ reference
  http://aarlangdi.blogspot.co.uk/2014/04/timer-with-datepicker-in-xcode.html
  
  */

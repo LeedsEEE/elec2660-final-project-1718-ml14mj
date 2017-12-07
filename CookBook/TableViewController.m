@@ -68,7 +68,7 @@
     if(section == 5){
         NumberOfRows = self.data.Chinese.count;
     }
-
+//the code above will show the header in the tabbleview as the Cuisine you wish to have.
 
     return NumberOfRows;
 }
